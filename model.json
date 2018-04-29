@@ -1,0 +1,97 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "voice notes",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "exit",
+                        "quit"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "how the fuck does this think work",
+                        "help me",
+                        "voice note help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ReadMessageIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "read messages for {name} ",
+                        "read {name} messages"
+                    ]
+                },
+                {
+                    "name": "SaveIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "record message for {name}",
+                        "save message for {name}"
+                    ]
+                },
+                {
+                    "name": "NewMessageIntent",
+                    "slots": [
+                        {
+                            "name": "message",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "will you {message}",
+                        "can you {message}",
+                        "hey {message}",
+                        "message is {message} "
+                    ]
+                },
+                {
+                    "name": "AddUserIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "add user {name}",
+                        "add new user {name}"
+                    ]
+                },
+                {
+                    "name": "RemoveMessageIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "delete {name} messages",
+                        "Delete messages for {name}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
